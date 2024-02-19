@@ -17,8 +17,8 @@
                     cupiditate dolores
                     ducimus expedita labore nemo odio quibusdam quidem sapiente soluta.
                     </h2>
-                <div style='color:black' class='scroll-button animate-scroll' >
-                <a tabindex='0' href='/about'>Click Here</a>
+                <div style='color:black' class='scroll-button animate-scroll' tabindex='0'>
+                <a href='/about'>Click Here</a>
                 <div class='arrow'>→</div>
                 </div>
             </div>
