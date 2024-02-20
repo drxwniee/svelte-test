@@ -1,14 +1,14 @@
 <h1>My to-do list</h1>
 <script>
-    let newItem = '';
+let newItem = '';
 let todoList = [];
 function add() {
     if (newItem !=='') {
         todoList = [
         ...todoList,
             {
-                задача: newItem,
-                завершено: false,
+                task: newItem,
+                completed: false,
             },
         ];
     newItem = '';
@@ -26,9 +26,10 @@ function complete(index){
 }
 
 </script>
-<main><form on:submit|preventDefault={add}>
-    <input bind:value= {newItem} placeholder="Enter to-do" >
-    <button class="add-todo" on:click= {add}><span>+</span></button>
+<main>
+    <form on:submit|preventDefault={add}>
+        <input bind:value= {newItem} placeholder="Enter to-do" >
+        <button class="add-todo" on:click= {add}><span>+</span></button>
     </form>
     <div class="todos">
         {#each todoList as item, index}
