@@ -1,3 +1,4 @@
+<h1>My to-do list</h1>
 <script>
     let newItem = '';
 let todoList = [];
@@ -45,7 +46,6 @@ function complete(index){
         {/each}
     </div>
 </main>
-<h1>My to-do list</h1>
 <style>
 main {
     display: flex;
@@ -86,7 +86,7 @@ input {
     justify-content: space-between;
     align-items: center;
 }
-.todo\_\_buttons {
+.todo_buttons {
     display: flex;
     align-items: center;
     margin-left: 1rem;
