@@ -3,6 +3,7 @@
     import { routes } from "./routes";
 
 </script>
+
 <svelte:head>
     <title>Блог</title>
 </svelte:head>
