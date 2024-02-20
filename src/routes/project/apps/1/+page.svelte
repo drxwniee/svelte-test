@@ -76,31 +76,56 @@ input {
 }
 
 .todo{
-display: flex;
-padding: 20px;
-border-radius: 20px;
-box-shadow: 0 0 15px rgb(0 0 0 / 20%);
-background-color: hsla(0, 0%, 100%, 02);
-margin-top: 1rem;
-font-size: 1.2rem;
-justify-content: space-between;
-align-items: center;
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+    background-color: hsla(0, 0%, 100%, 02);
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
 }
 .todo\_\_buttons {
-display: flex;
-align-items: center;
-margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
 }
-.todo button {
-width: 32px;
-height: 32px;
-padding: 4px;
-margin: 0;
-flex-shrink: 0;
+.todo_button {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    margin: 0;
+    flex-shrink: 0;
 }
 h1 {
-text-align: center;
-font-size: 1.5rem;
-margin: 2em 0;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2em 0;
+}
+button {
+    background-color: transparent;
+    border: none;
+}
+button.delete, button.delete:hover {
+    color: brown;
+    transition: color 100ms ease-out;
+}
+button.complete, button.complete:hover {
+    color: cadetblue;
+    transition: color 100ms ease-out;
+}
+.todo.completed {
+    color: slategray;
+}
+.todo.completed.todo_text {
+    text-decoration: line-through;
+}
+.todo.completed button{
+    color: silver;
+}
+.todos {
+    width: 100%;
+    max-width: 500px;
 }
 </style>
